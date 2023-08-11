@@ -205,8 +205,8 @@ elif choose == "2":
                         t = asyncio.ensure_future(send_rq(session))
                         nod.append(t)
 
-                    await asyncio.gather(*nod*threads, await asyncio.gather(*nod*threads))
-                    await asyncio.gather(*nod*threads, await asyncio.gather(*nod*threads))
+                    await asyncio.gather(*nod*threads)
+                    await asyncio.gather(*nod*threads)
                     
             if __name__ =='__main__':
                 loop = asyncio.get_event_loop()
