@@ -9,4 +9,16 @@ GhostManSec, or GMS Sploit, is a powerful tool with 8 diverse functions. Firstly
 ### Screenshot
 <img src="https://github.com/Phamchie/GhostManSec/blob/main/img/Screenshot_2023-08-11-21-05-09-43.jpg">
 
-In summary, GhostManSec or GMS Sploit is a powerful multi-functional tool designed to test and exploit common security vulnerabilities in web applications and server systems.
+- In summary, GhostManSec or GMS Sploit is a powerful multi-functional tool designed to test and exploit common security vulnerabilities in web applications and server systems.
+
+### Setup - Install
+1. `git clone https://github.com/Phamchie/GhostManSec`
+2. `cd GhostManSec`
+3. `python3 setup.py`
+4. `python3 gms.py`
+```
+git clone https://github.com/Phamchie/GhostManSec
+cd GhostManSec
+python3 setup.py
+python3 gms.py
+```
