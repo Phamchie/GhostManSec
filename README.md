@@ -26,3 +26,5 @@ python3 gms.py
 ```
 ### Screenshot All Method
 <img src="https://raw.githubusercontent.com/Phamchie/GhostManSec/main/img/Screenshot_2023-08-12-01-08-59-89.jpg">
+
+<img src="https://raw.githubusercontent.com/Phamchie/GhostManSec/main/img/Screenshot_2023-08-12-01-09-13-96.jpg">
