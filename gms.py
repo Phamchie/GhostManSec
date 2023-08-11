@@ -20,13 +20,23 @@ os.system('cls' if os.name == 'nt' else 'clear')
 print(f'''
 {Fore.RED}GMS - GhostManSec Sploit Tool
 {Fore.RED}Dev By : @ghostman_s3c{Style.RESET_ALL}
-
- .-.
-(o o) boo!
-| O \
- \   \
-  
-  `~~~'
+                            ,-.                               
+       ___,---.__          /'|`\          __,---,___          
+    ,-'    \`    `-.____,-'  |  `-.____,-'    //    `-.       
+  ,'        |           ~'\     /`~           |        `.      
+ /      ___//              `. ,'          ,  , \___      \    
+|    ,-'   `-.__   _         |        ,    __,-'   `-.    |    
+|   /          /\_  `   .    |    ,      _/\          \   |   
+\  |           \ \`-.___ \   |   / ___,-'/ /           |  /  
+ \  \           | `._   `\\  |  //'   _,' |           /  /      
+  `-.\         /'  _ `---'' , . ``---' _  `\         /,-'     
+     ``       /     \    ,='/ \`=.    /     \       ''          
+             |__   /|\_,--.,-.--,--._/|\   __|                  
+             /  `./  \\`\ |  |  | /,//' \,'  \                  
+eViL        /   /     ||--+--|--+-/-|     \   \                 
+           |   |     /'\_\_\ | /_/_/`\     |   |                
+            \   \__, \_     `~'     _/ .__/   /            
+             `-._,-'   `-._______,-'   `-._,-'
   {Style.RESET_ALL}
 
      =[ GMS v1.4-dev                  ]=-
@@ -207,8 +217,8 @@ elif choose == "2":
                         t = asyncio.ensure_future(send_rq(session))
                         nod.append(t)
 
-                    await asyncio.gather(*nod*threads)
-                    await asyncio.gather(*nod*threads)
+                    await asyncio.gather(*nod)
+                    await asyncio.gather(*nod)
                     
             if __name__ =='__main__':
                 loop = asyncio.get_event_loop()
