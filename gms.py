@@ -25,7 +25,9 @@ print(f'''
 (o o) boo!
 | O \
  \   \
-  `~~~'{Style.RESET_ALL}
+  
+  `~~~'
+  {Style.RESET_ALL}
 
      =[ GMS v1.4-dev                  ]=-
 +-- -=[ Copyright By {Fore.BLUE}Ph4mCh13n{Style.RESET_ALL}        ]=-
