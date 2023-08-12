@@ -1,7 +1,7 @@
 # Ghost Man Security Sploit Tools
-twitter : [ghostman_s3c](https://twitter.com/ghostman_s3c)
-tele : [@ghostman_s3c](https://t.me/ghostman_s3c)
-facebook : [Adonis Bertha](https://www.facebook.com/francesca.savino.18)
+- twitter : [ghostman_s3c](https://twitter.com/ghostman_s3c)
+- tele : [@ghostman_s3c](https://t.me/ghostman_s3c)
+- facebook : [Adonis Bertha](https://www.facebook.com/francesca.savino.18)
 
 GhostManSec, or GMS Sploit, is a powerful tool with 8 diverse functions. 
 
