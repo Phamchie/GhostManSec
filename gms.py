@@ -1,20 +1,31 @@
-import colorama
+try:
+  import colorama
+  from colorama import Fore
+  from colorama import Style
+  from colorama import Back
+except:
+  print("[+] Please Setup Tool\npython3 setup.py")
 import os
-import requests
+try:
+  import requests
+except:
+  print("[+] Please Setup Tool\npython3 setup.py")
 import random
 import socket
 import sys
 import subprocess
 import re
 import threading
-import aiohttp
-import asyncio
-from colorama import Fore
-from colorama import Style
-from colorama import Back
-
-colorama.init()
-
+try:
+  import aiohttp
+  import asyncio
+except:
+  print("[+] Please Setup Tool\npython3 setup.py")
+try:
+  colorama.init()
+except:
+  print("[+] Please Setup Tool\npython3 setup.py")
+  
 os.system('cls' if os.name == 'nt' else 'clear')
 
 print(f'''
